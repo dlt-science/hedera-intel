@@ -66,13 +66,13 @@ pip install -e ".[dev]"
 Fetch balances data for the first time:
 
 ```bash
-python script/fetch-transactions.py
+python scripts/process/fetch-transactions.py
 ```
 
 This only needs to be run once, and the data will be saved in [`data/`](data/) folder. run `git lfs pull` to get the data.
 
 ```bash
-python script/simulate.py
+python scripts/process/process-tx-types.py
 ```
 
 ## Git Large File Storage (Git LFS)
