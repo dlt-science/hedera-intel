@@ -9,6 +9,7 @@ __pycache__/
 # Data
 data/transactions*
 
+subtle-fulcrum-key.json
 # Distribution / packaging
 .Python
 build/
