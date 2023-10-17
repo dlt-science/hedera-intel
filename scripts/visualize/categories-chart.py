@@ -23,6 +23,7 @@ colors = plt.cm.Paired(range(len(category_percentages)))
 fig, ax = plt.subplots(figsize=(8, 6))
 wedges, texts, autotexts = ax.pie(category_percentages, labels=category_percentages.index, 
                                   autopct='%1.1f%%', startangle=90, colors=colors, 
+                                  pctdistance=0.8, labeldistance=1.3,  # Adjust these values
                                   shadow=False, textprops=dict(color="w", weight="bold", size=12))
 
 ax.axis('equal')  
