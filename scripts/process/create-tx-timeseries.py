@@ -12,7 +12,7 @@ def convert_epoch_to_date(epoch):
     return datetime.fromtimestamp(epoch, tz=timezone.utc).strftime('%Y-%m-%d %H:%M:%S')
 
 # Load the CSV file into a DataFrame
-file_path = os.path.join(DATA_PATH, 'transactions-data.csv')
+file_path = os.path.join(DATA_PATH, 'transactions-data-July2023.csv')
 
 df = pd.read_csv(file_path, low_memory=False, usecols=['consensus_timestamp', 'name', 'charged_tx_fee'])
 
@@ -33,4 +33,4 @@ time_series_df = time_series_df.rename(columns={
 })
 
 # Save to a new CSV file
-time_series_df.to_csv(os.path.join(DATA_PATH, "timeseries_data.csv"), index=False)
+time_series_df.to_csv(os.path.join(DATA_PATH, "timeseries_data__July2023.csv"), index=False)

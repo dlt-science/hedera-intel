@@ -13,7 +13,7 @@ df['time'] = pd.to_datetime(df['time'])
 
 colors = {'CRYPTOAPPROVEALLOWANCE': '#C5DAEF',
           'CRYPTOTRANSFER': '#92B2D5',
-          'CONSENSUSCREATETOPIC': '#F0D9AB',
+          'FILEAPPEND': '#F0D9AB',
           'CONTRACTCALL': '#E3AFC4',
           'CRYPTOCREATEACCOUNT': '#EFC6AE',
           'CRYPTOUPDATEACCOUNT': '#7BB3AF',
@@ -24,7 +24,7 @@ colors = {'CRYPTOAPPROVEALLOWANCE': '#C5DAEF',
 
 # Create a list of traces for each transaction type
 traces = []
-for col in ['CONSENSUSCREATETOPIC', 'CRYPTOAPPROVEALLOWANCE', 'CONTRACTCALL', 'CRYPTOCREATEACCOUNT', 'CRYPTOTRANSFER','CRYPTOUPDATEACCOUNT', 'FILEUPDATE', 'TOKENMINT', 'TOKENBURN']:
+for col in ['FILEAPPEND', 'CRYPTOAPPROVEALLOWANCE', 'CONTRACTCALL', 'CRYPTOCREATEACCOUNT', 'CRYPTOTRANSFER','CRYPTOUPDATEACCOUNT', 'FILEUPDATE', 'TOKENMINT', 'TOKENBURN']:
     traces.append(go.Scatter(x=df['time'], y=df[col], fill='tonexty',
                              mode='none', name=col, fillcolor=colors[col], stackgroup='one'))
 

@@ -6,7 +6,7 @@ from os import path
 from transactions.constants import DATA_PATH, RESULTS_PATH, FIGURES_PATH
 
 # Load the data
-file_path = os.path.join(RESULTS_PATH, "hourly_average_fees.csv")
+file_path = os.path.join(RESULTS_PATH, "hourly_average_fees_by_type.csv")
 df = pd.read_csv(file_path)
 
 # Convert 'hour' 
@@ -14,7 +14,7 @@ df['time'] = pd.to_datetime(df['time'])
 
 colors = {'CRYPTOAPPROVEALLOWANCE': '#C5DAEF',
           'CRYPTOTRANSFER': '#92B2D5',
-          'CONSENSUSCREATETOPIC': '#F0D9AB',
+          'CONSENSUSSUBMITMESSAGE': '#F0D9AB',
           'CONTRACTCALL': '#E3AFC4',
           'CRYPTOCREATEACCOUNT': '#EFC6AE',
           'CRYPTOUPDATEACCOUNT': '#7BB3AF',
@@ -25,7 +25,7 @@ colors = {'CRYPTOAPPROVEALLOWANCE': '#C5DAEF',
 
 # Create a list of traces for each transaction type
 traces = []
-for col in ['CONSENSUSCREATETOPIC', 'CRYPTOAPPROVEALLOWANCE', 'CONTRACTCALL', 'CRYPTOCREATEACCOUNT', 'CRYPTOTRANSFER','CRYPTOUPDATEACCOUNT', 'FILEUPDATE', 'TOKENMINT', 'TOKENBURN']:
+for col in ['CONSENSUSSUBMITMESSAGE', 'CRYPTOAPPROVEALLOWANCE', 'CONTRACTCALL', 'CRYPTOCREATEACCOUNT', 'CRYPTOTRANSFER','CRYPTOUPDATEACCOUNT', 'FILEUPDATE', 'TOKENMINT', 'TOKENBURN']:
     traces.append(go.Scatter(x=df['time'], y=df[col], fill='tonexty',
                              mode='none', name=col, fillcolor=colors[col], stackgroup='one'))
 
@@ -61,7 +61,7 @@ fig.update_layout(title={'text': 'Transaction Fees by Type Over Time',
                              rangeslider=dict(visible=True),
                              type="date"
                             ),
-                  yaxis=dict(showgrid=False, tickformat='2s'))
+                  yaxis=dict(showgrid=False))  # Removed tickformat here
 
 # Update the legend
 fig.update_layout(legend=dict(orientation='h',

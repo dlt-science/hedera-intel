@@ -5,7 +5,7 @@ from datetime import datetime
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
 # Load the CSV file
-df = pd.read_csv(os.path.join(DATA_PATH, "timeseries_data.csv"))
+df = pd.read_csv(os.path.join(DATA_PATH, "timeseries_data_2020.csv"))
 
 # Convert the 'time' column to datetime format
 df['time'] = pd.to_datetime(df['time'])

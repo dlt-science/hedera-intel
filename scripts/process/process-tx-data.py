@@ -7,18 +7,28 @@ from multiprocessing import Pool, cpu_count
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
 
+import zlib
+
 def process_file_to_df(filename):
     transactions = []
-    with gzip.open(os.path.join(DATA_PATH, filename), "rt") as file:
-        print(file)
-        for line in file:
-            try:
-                record = json.loads(line)
-                transactions.append(record)
-            except json.JSONDecodeError as e:
-                print(f"Error in file {filename}: {e}")
+    try:
+        with gzip.open(os.path.join(DATA_PATH, filename), "rt") as file:
+            print(file)
+            for line in file:
+                try:
+                    record = json.loads(line)
+                    transactions.append(record)
+                except json.JSONDecodeError as e:
+                    print(f"JSON Decode Error in file {filename}: {e}")
+    except zlib.error as e:
+        print(f"Zlib Error in file {filename}: {e}")
+        return None  
+    except Exception as e:  # This is to catch any other unexpected errors
+        print(f"Unexpected error in file {filename}: {e}")
+        return None  
 
     return pd.DataFrame(transactions)
+
 
 
 if __name__ == '__main__':
@@ -34,5 +44,5 @@ if __name__ == '__main__':
     print('concat')
     df = pd.concat(df_list, ignore_index=True)
    
-    df.to_csv(os.path.join(DATA_PATH, "transactions-data.csv"), index=False)
+    df.to_csv(os.path.join(DATA_PATH, "transactions-data-July2023.csv"), index=False)
    

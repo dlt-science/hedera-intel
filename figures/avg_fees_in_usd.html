@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    #vis.vega-embed {
+      width: 100%;
+      display: flex;
+    }
+
+    #vis.vega-embed details,
+    #vis.vega-embed details summary {
+      position: relative;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-lite@5.15.1"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 300, "continuousHeight": 300, "strokeWidth": 0}, "axis": {"labelFontSize": 12, "titleFontSize": 14}, "title": {"anchor": "middle", "fontSize": 20}}, "layer": [{"mark": {"type": "line", "color": "blue", "strokeWidth": 2}, "encoding": {"tooltip": [{"field": "time", "type": "temporal"}, {"field": "fee_USD", "type": "quantitative"}], "x": {"axis": {"grid": false}, "field": "time", "title": "Time", "type": "temporal"}, "y": {"axis": {"grid": true}, "field": "fee_USD", "title": "Fee (USD)", "type": "quantitative"}}}, {"mark": {"type": "rule", "color": "red", "strokeWidth": 1}, "encoding": {"y": {"field": "a", "type": "quantitative"}}, "transform": [{"calculate": "0.0001", "as": "a"}]}], "data": {"name": "data-788130ddf53a949646c06a3307078dc1"}, "height": 400, "title": "Hourly Average Fees Over Time", "width": 800, "$schema": "https://vega.github.io/schema/vega-lite/v5.15.1.json", "datasets": {"data-788130ddf53a949646c06a3307078dc1": [{"time": "2023-03-31T18:00:00", "fee_USD": 0.0001719249399111}, {"time": "2023-03-31T19:00:00", "fee_USD": 0.0001676922619821}, {"time": "2023-03-31T20:00:00", "fee_USD": 0.0001605118459314}, {"time": "2023-03-31T21:00:00", "fee_USD": 0.000157409712384}, {"time": "2023-03-31T22:00:00", "fee_USD": 0.0001687603480488}, {"time": "2023-03-31T23:00:00", "fee_USD": 0.0001817515858929}, {"time": "2023-04-01T00:00:00", "fee_USD": 0.0001634862492018}, {"time": "2023-04-01T01:00:00", "fee_USD": 0.0002749614060455}, {"time": "2023-04-01T02:00:00", "fee_USD": 0.0002078972129827}, {"time": "2023-04-01T03:00:00", "fee_USD": 0.0001323566369411}, {"time": "2023-04-01T04:00:00", "fee_USD": 0.0001413842604054}, {"time": "2023-04-01T05:00:00", "fee_USD": 0.0001443191559748}, {"time": "2023-04-01T06:00:00", "fee_USD": 0.0001255120648529}, {"time": "2023-04-01T07:00:00", "fee_USD": 0.0001315248718285}, {"time": "2023-04-01T08:00:00", "fee_USD": 0.0001681355532292}, {"time": "2023-04-01T09:00:00", "fee_USD": 0.0001537538438171}, {"time": "2023-04-01T10:00:00", "fee_USD": 0.0001581603883491}, {"time": "2023-04-01T11:00:00", "fee_USD": 0.0001726584223202}, {"time": "2023-04-01T12:00:00", "fee_USD": 0.0001732194394634}, {"time": "2023-04-01T13:00:00", "fee_USD": 0.0001754098690095}, {"time": "2023-04-01T14:00:00", "fee_USD": 0.0001669115977816}, {"time": "2023-04-01T15:00:00", "fee_USD": 0.0001808771726889}, {"time": "2023-04-01T16:00:00", "fee_USD": 0.0002512619138921}, {"time": "2023-04-01T17:00:00", "fee_USD": 0.0002225786101033}, {"time": "2023-04-01T18:00:00", "fee_USD": 0.0001774590705245}, {"time": "2023-04-01T19:00:00", "fee_USD": 0.0001801429070223}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

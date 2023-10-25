@@ -5,7 +5,7 @@ from os import path
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
 # Load the CSV file
-file_path = os.path.join(DATA_PATH, "timeseries_data.csv")
+file_path = os.path.join(DATA_PATH, "timeseries_data_July2023.csv")
 df = pd.read_csv(file_path)
 
 df['fee'] = pd.to_numeric(df['fee'], errors='coerce')
@@ -17,6 +17,9 @@ df['hour'] = df['time'].dt.strftime('%Y-%m-%d %H:00:00')
 
 hourly_avg_fees = df.groupby(['hour', 'type'])['fee'].mean().unstack(fill_value=0).reset_index()
 
+# Convert fees from tinybars to hbars
+hourly_avg_fees.iloc[:, 1:] = hourly_avg_fees.iloc[:, 1:] / 100_000_000
+
 # Rename the column
 hourly_avg_fees = hourly_avg_fees.rename(columns={
     'hour': 'time'
@@ -24,5 +27,5 @@ hourly_avg_fees = hourly_avg_fees.rename(columns={
 
 print(hourly_avg_fees)
 
-output_file_path = os.path.join(RESULTS_PATH, 'hourly_average_fees.csv')
+output_file_path = os.path.join(RESULTS_PATH, 'hourly_average_fees_by_type.csv')
 hourly_avg_fees.to_csv(output_file_path, index=False)
