@@ -3,7 +3,7 @@ import pandas as pd
 import os
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
-file_path = os.path.join(DATA_PATH, "hbar_price.json")
+file_path  = os.path.join(RESULTS_PATH, "hbar_prices", f"hbar_price_JulyOct2023.json")
 
 # Load the JSON file
 with open(file_path, "r") as file:
@@ -16,5 +16,5 @@ prices = [{"time": entry["time"], "price": entry["principal_market_price_usd"]} 
 df = pd.DataFrame(prices)
 
 # Save to CSV
-output_file = os.path.join(RESULTS_PATH, 'hbar_price.csv')
+output_file  = os.path.join(RESULTS_PATH, "hbar_prices", f"hbar_price_JulyOct2023.csv")
 df.to_csv(output_file, index=False)

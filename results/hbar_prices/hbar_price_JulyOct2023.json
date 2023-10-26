@@ -1,0 +1,594 @@
+{
+  "data": [
+    {
+      "asset": "hbar",
+      "time": "2023-07-01T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.050689353"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-02T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05069493"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-03T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.050095491"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-04T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.050204518"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-05T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.048493695"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-06T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0472"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-07T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.046101844"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-08T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04710706500000001"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-09T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0470094"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-10T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.047106594"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-11T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.047507125000000004"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-12T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04840242"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-13T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.048298551"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-14T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052421484000000004"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-15T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051127083"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-16T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052114588"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-17T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0506253"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-18T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051897924"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-19T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0529"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-20T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05610504899999999"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-21T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.057295989"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-22T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.055403324"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-23T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05360804000000001"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-24T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05339733000000001"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-25T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051893772000000005"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-26T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052293201000000004"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-27T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052302092"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-28T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051788604"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-29T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052598948"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-30T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.053799462000000006"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-07-31T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052895768"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-01T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0522742492"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-02T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0517741"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-03T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052669961"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-04T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05345827"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-05T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05312764799999999"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-06T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0524517"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-07T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.057712144"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-08T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.056535475999999994"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-09T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.06197768"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-10T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05975694399999999"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-11T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.057634222"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-12T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.056542268"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-13T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05626622"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-14T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.056860169999999995"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-15T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.06533787"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-16T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.06762553"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-17T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.06252613200000001"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-18T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05761051401237332"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-19T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0590882498611537"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-20T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.06519098191916402"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-21T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.06130248102329133"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-22T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.061295495222745265"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-23T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.058969724429092304"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-24T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.061789362044224756"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-25T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.059268968355675404"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-26T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05897493745203376"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-27T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05788155151585965"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-28T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05817689995735921"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-29T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05616084837952774"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-30T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05640360159233761"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-08-31T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.053608187255746245"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-01T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052384040305592135"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-02T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04993"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-03T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04969560049819247"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-04T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04859"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-05T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04838148410014396"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-06T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04928287351553383"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-07T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04921"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-08T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05004267938960665"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-09T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04999197236331695"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-10T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.048991032986379225"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-11T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04787"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-12T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.046379199547899194"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-13T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04700385602222902"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-14T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04960739592708413"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-15T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051714695096482535"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-16T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05200623609022556"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-17T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051719465595971036"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-18T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.049505224666305546"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-19T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05010318202910116"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-20T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05111233947476364"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-21T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05049746801936664"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-22T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05039239310854115"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-23T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05039222622497901"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-24T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.052007102657024365"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-25T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04980244764343547"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-26T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05038294760539992"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-27T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04937505667066336"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-28T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0494"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-29T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04991052610542981"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-09-30T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04949863877423534"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-01T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04979"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-02T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05070500425210513"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-03T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05002318282979621"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-04T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04939936962274345"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-05T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04881"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-06T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04800094563993228"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-07T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04852578578208012"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-08T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04823548192094478"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-09T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04803129004828897"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-10T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.0464073350986049"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-11T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.046906078862557724"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-12T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04658503900977812"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-13T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04558396480070913"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-14T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04660445841875453"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-15T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04680090607613854"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-16T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04685652221795374"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-17T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.047426044348977243"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-18T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04672535578749298"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-19T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04743526188726628"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-20T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04582119830561777"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-21T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04743029096998082"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-22T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.04902819444736991"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-23T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.050115969224244515"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-24T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.051902812837012716"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-25T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05139186324540414"
+    },
+    {
+      "asset": "hbar",
+      "time": "2023-10-26T00:00:00.000000000Z",
+      "principal_market_price_usd": "0.05220847441903613"
+    }
+  ]
+}
