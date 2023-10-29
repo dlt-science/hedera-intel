@@ -7,8 +7,7 @@ __pycache__/
 *.so
 
 # Data
-data/transactions*
-data/timeseries*
+data/data_ct_1y
 
 subtle-fulcrum-key.json
 # Distribution / packaging

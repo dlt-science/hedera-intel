@@ -6,7 +6,6 @@ from os import path
 from multiprocessing import Pool, cpu_count
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
-
 import zlib
 
 def process_file_to_df(filename):
@@ -33,7 +32,7 @@ def process_file_to_df(filename):
 
 if __name__ == '__main__':
 
-    num_cores = cpu_count()
+    num_cores = cpu_count() - 1
 
     file_list = [f for f in os.listdir(DATA_PATH) if f.endswith(".jsonl.gz")]
     print(file_list)
@@ -44,5 +43,5 @@ if __name__ == '__main__':
     print('concat')
     df = pd.concat(df_list, ignore_index=True)
    
-    df.to_csv(os.path.join(DATA_PATH, "transactions-data-July2023.csv"), index=False)
+    df.to_csv(os.path.join(DATA_PATH, "transactions-data-test.csv"), index=False)
    

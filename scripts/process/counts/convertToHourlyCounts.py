@@ -5,7 +5,7 @@ from datetime import datetime
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
 # Load the CSV file
-df = pd.read_csv(os.path.join(DATA_PATH, "timeseries_data_2020.csv"))
+df = pd.read_csv(os.path.join(DATA_PATH, "timeseries_data_test.csv"))
 
 # Convert the 'time' column to datetime format
 df['time'] = pd.to_datetime(df['time'])
@@ -22,5 +22,5 @@ hourly_data_counts = hourly_data_counts.rename(columns={
 
 print(hourly_data_counts)
 
-output_file_path = os.path.join(RESULTS_PATH, 'hourly_data_counts.csv')
+output_file_path = os.path.join(RESULTS_PATH, 'hourly_data_counts_test.csv')
 hourly_data_counts.to_csv(output_file_path, index=False)

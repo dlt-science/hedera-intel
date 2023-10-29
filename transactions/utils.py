@@ -24,9 +24,9 @@ def save_data(
     **kwargs,
 ):
 
-    default_file = path.join(DATA_PATH, f"{file_name}.jsonl.gz")
+    default_file = path.join(DATA_PATH, "data_ct_1m", f"{file_name}.jsonl.gz")
 
-    breakpoint_file = path.join(DATA_PATH, f"{file_name}-breakpoint.txt")
+    breakpoint_file = path.join(DATA_PATH, "data_ct_1m", f"{file_name}-breakpoint.txt")
 
     if exists(breakpoint_file):
         with open(breakpoint_file) as text_file:
@@ -92,14 +92,14 @@ def fetch_save_data(
     """
 
     individual_tx_files = sorted(
-        glob(path.join(DATA_PATH, f"{file_name}-*.jsonl.gz")), reverse=True
+        glob(path.join(DATA_PATH, "data_ct_1m", f"{file_name}-*.jsonl.gz")), reverse=True
     )
 
     greater_than = gt_lt[0]
     less_than = gt_lt[1]
 
     default_file_name = file_name + str(greater_than) + "temp"
-    default_file = path.join(DATA_PATH, f"{default_file_name}.jsonl.gz")
+    default_file = path.join(DATA_PATH, "data_ct_1m", f"{default_file_name}.jsonl.gz")
 
     if individual_tx_files:
         file_suffixes = [
@@ -112,7 +112,7 @@ def fetch_save_data(
         if file_suffix_inscope:
             greater_than = file_suffix_inscope[0]
 
-    query = f"/{suburl}/{q}?limit={limit}&order=asc&{counter_field_url}=lt:{less_than}&{counter_field_url}=gt:{greater_than}"
+    query = f"/{suburl}/{q}?transactionType=cryptotransfer&limit={limit}&order=asc&{counter_field_url}=lt:{less_than}&{counter_field_url}=gt:{greater_than}"
 
     logging.info(f"between {greater_than} and {less_than} start querying {query}")
 
@@ -134,7 +134,7 @@ def fetch_save_data(
             file_suffix = next_query.split("gt:")[1]
             rename(
                 default_file,
-                path.join(DATA_PATH, f"{file_name}-{file_suffix}-.jsonl.gz"),
+                path.join(DATA_PATH, "data_ct_1m", f"{file_name}-{file_suffix}-.jsonl.gz"),
             )
             logging.info(
                 f"between {greater_than} and {less_than} No.{i}===={file_suffix}"
