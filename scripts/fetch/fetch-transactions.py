@@ -13,13 +13,10 @@ logging.basicConfig(level=logging.INFO)
 
 
 break_points = [
-    datetime(2023, 9, 25),
-    datetime(2023, 10, 1),
-    datetime(2023, 10, 5),
-    datetime(2023, 10, 10),
-    datetime(2023, 10, 15),
-    datetime(2023, 10, 20),
-    datetime(2023, 10, 25)
+    datetime(2023, 1, 1),
+    datetime(2023, 4, 1),
+    datetime(2023, 7, 1),
+    datetime(2023, 10, 1)
 ]
 
 

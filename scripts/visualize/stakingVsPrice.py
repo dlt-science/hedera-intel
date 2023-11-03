@@ -1,10 +1,10 @@
 import pandas as pd
+import altair as alt
 import os
-import plotly.graph_objects as go
 from transactions.constants import DATA_PATH, RESULTS_PATH, FIGURES_PATH
 
 # Paths to the CSV files
-prices_path = os.path.join(RESULTS_PATH, "hbar_prices", "hbar_price_JulyOct2023.csv")
+prices_path = os.path.join(RESULTS_PATH, "prices", "HBARvsETH_price_2023.csv")
 stakes_path = os.path.join(RESULTS_PATH, "nodes", "nodes_historical_stakes.csv")
 
 # Load the CSV files into pandas DataFrames
@@ -18,43 +18,33 @@ df_stakes["time"] = pd.to_datetime(df_stakes["time"])
 # Merge the two DataFrames on the standardized "time" column
 df = pd.merge(df_prices, df_stakes, on="time")
 
-# Normalize the date format
-df['time'] = df['time'].dt.strftime('%b %d, %Y')
-
-fig = go.Figure()
-
-# Creating first trace
-fig.add_trace(go.Scatter(x=df['time'], y=df['price'],
-                         mode='lines',
-                         name='HBAR Price (from CoinMetrics)'))
-
-# Creating second trace, with secondary y-axis
-fig.add_trace(go.Scatter(x=df['time'], y=df['stake_amount'],
-                         mode='lines',
-                         name='HBAR Total Staked',
-                         yaxis="y2"))
-
-# Add a vertical line at August 11, 2023
-fig.add_vline(x='Aug 11, 2023', line_dash="dash", line_color="red")
-
-# Updating layout to include 2 y-axes, one on the left (y1) and one on the right (y2)
-fig.update_layout(
-    title='HBAR Price and Total Amount Staked Over Time (Aug 11, 2023: Staking reward rate reduced from 6.5% to 2.5%)',
-    xaxis_title='Time',
-    yaxis=dict(
-        title='HBAR Price',
-    ),
-    yaxis2=dict(
-        title='HBAR Total Staked',
-        anchor="free",
-        overlaying="y",
-        side="right",
-        position=1
-    )
+# Base chart
+base = alt.Chart(df).encode(
+    x=alt.X("time:T", title="Time")
+).properties(
+    width=600
 )
 
-# Save the figure as an HTML file
-fig.write_html(os.path.join(FIGURES_PATH, "StakingVsPrice.html"))
+# Define buffer for y-axis range
+price_buffer = (df["price"].max() - df["price"].min()) * 0.1
+stake_buffer = (df["stake_amount"].max() - df["stake_amount"].min()) * 0.1
 
-fig.show()
+# Line for HBAR/ETH Price
+price_line = base.mark_line().encode(
+    y=alt.Y("price:Q", title="HBAR/ETH Price", scale=alt.Scale(domain=[df["price"].min() - price_buffer, df["price"].max() + price_buffer])),
+    color=alt.value("blue"),
+    tooltip="price:Q"
+)
+
+# Line for HBAR Total Staked on a separate Y axis
+stake_line = base.mark_line().encode(
+    y=alt.Y("stake_amount:Q", axis=alt.Axis(title="HBAR Total Staked"), scale=alt.Scale(domain=[df["stake_amount"].min() - stake_buffer, df["stake_amount"].max() + stake_buffer])),
+    color=alt.value("green"),
+    tooltip="stake_amount:Q"
+)
+
+# Save the chart
+chart.save('stakingVsPriceRelative.html')
+
+
 

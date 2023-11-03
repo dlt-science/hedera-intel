@@ -33,7 +33,6 @@ if __name__ == '__main__':
 
     result = pd.concat(results)
 
-    # Flattening the data
     data = []
     for index, row in result.iterrows():
         for account, count in row['Counts'].items():
