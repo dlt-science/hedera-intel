@@ -3,11 +3,9 @@ import altair as alt
 import os
 from transactions.constants import DATA_PATH, RESULTS_PATH, FIGURES_PATH
 
-# Paths to the CSV files
 prices_path = os.path.join(RESULTS_PATH, "prices", "HBARvsETH_price_2023.csv")
 stakes_path = os.path.join(RESULTS_PATH, "nodes", "nodes_historical_stakes.csv")
 
-# Load the CSV files into pandas DataFrames
 df_prices = pd.read_csv(prices_path)
 df_stakes = pd.read_csv(stakes_path)
 

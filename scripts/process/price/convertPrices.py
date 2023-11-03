@@ -15,6 +15,5 @@ prices = [{"time": entry["time"], "price": entry["principal_market_price_usd"]} 
 # Convert to DataFrame
 df = pd.DataFrame(prices)
 
-# Save to CSV
 output_file  = os.path.join(RESULTS_PATH, "prices", "eth_price_2023.csv")
 df.to_csv(output_file, index=False)

@@ -3,10 +3,10 @@ import ast
 import os
 from transactions.constants import DATA_PATH, RESULTS_PATH
 
-# Read the data
+
 df = pd.read_csv(os.path.join(DATA_PATH, "data_ct_1y", "data_ct_1y.csv"))
 
-# Lists to store the processed data
+
 consensus_timestamps = []
 charged_tx_fees = []
 transaction_ids = []
