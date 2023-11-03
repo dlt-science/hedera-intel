@@ -12,6 +12,7 @@ __pycache__/
 *data/data_ct_1m
 data/data_ct_1m/transactions*
 
+
 *results/graphs 
 results/memos/AllMemo.csv
 
